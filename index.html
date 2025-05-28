@@ -5,9 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RapidFix - Emergency Home Services</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    header {
+      background-color: #28a745; /* green header like bezgofresh */
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .book-now-btn {
+      background-color: white;
+      color: #28a745;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .transition {
+      height: 10vh;
+    }
+    .black-green {
+      background: linear-gradient(to bottom, #000000, #28a745);
+    }
+    .green-white {
+      background: linear-gradient(to bottom, #28a745, #ffffff);
+    }
+    .bg-black {
+      background-color: #000000;
+      color: white;
+    }
+    .bg-green {
+      background-color: #28a745;
+      color: white;
+    }
+    .bg-white, .bg-green-white {
+      background-color: white;
+      color: black;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .hero .text-sub {
+      text-align:center;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0.3rem;
+    }
+    .hero .hero-cta {
+      text-align: center;
+      margin-top: 0.8rem;
+    }
+    .hero .hero-cta .book-now-btn {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-
   <!-- Navigation -->
   <header>
     <div class="logo">RapidFix</div>
@@ -19,48 +99,95 @@
         <li><a href="tools.html">Tools</a></li>
       </ul>
     </nav>
-    <a href="https://wa.me/XXXXXXXXXXX" class="book-now-btn" target="_blank">Book Now</a>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Electrical & Plumbing Services — Just a Click Away, Right at Your Doorstep.</h1>
-    <p>Help at your doorstep in 30 minutes - guarantee</p>
+  <section class="hero section bg-black">
+    
+  <h1><span class="text-highlight">Electrical</span> & <span class="text-highlight">Plumbing Services</span></h1>
+  <h2 class="hero-subtext">– Just a Click Away, Right at Your Doorstep.</h2>
+  <p class="hero-desc">Help at your doorstep in 30 minutes — guaranteed.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/XXXXXXXXXXX" class="book-now-btn" target="_blank">Book Now</a>
+    </div>
   </section>
+
+  <!-- Full-slide Black-to-Green Gradient Section -->
+<section class="section black-green-mixed">
+  <h2 class="big-heading translucent-text">FAST FIX WHEN YOU NEED THEM MOST</h2>
+  <p class="sub-subtext">
+    Partner up with technicians by ensuring their quality of work and delivery straight to your doorstep.
+  </p>
+</section>
+
+
+<!-- Green to White Full-Slide Transition Section -->
+<section class="green-white-section">
+  <div class="green-white-container">
+    <div class="images-side">
+      <img src="images/1.jpg" alt="Service 1">
+      <img src="images/2.jpg" alt="Service 2">
+      <img src="images/3.jpg" alt="Service 3">
+      <img src="images/4.jpg" alt="Service 4">
+    </div>
+    <div class="text-box">
+      <p class="intro-text">
+        Hi! We're RapidFix — are you a busy professional struggling to find time to repair or replace plumbing and electrical equipment at your home?
+      </p>
+      <a href="about.html" class="more-btn">More</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Why Choose Us -->
-  <section class="why-us">
-    <h2>Fast fix when you need them most.</h2>
-    <p>Partner up with technicians by ensuring their quality of work and delivers straight to your doorstep.</p>
-    <p>Hi! We're RapidFix — are you a busy professional struggling to find time to repair or replace plumbing and electrical equipment at your home? <a href="about.html">More</a></p>
-  </section>
-
-  <!-- How It Works -->
-  <section class="steps">
-    <h2>GET YOUR SERVICES OR TOOLS IN LESS THAN 30 MINUTES</h2>
-    <div class="step">
-      <img src="images/whatsapp.jpg" alt="WhatsApp" />
-      <h3>01 Just say Hi</h3>
-      <p>Tap the WhatsApp button below, say "hi" and we’ll share all services and tools instantly.</p>
+  <section class="section bg-green">
+    <h2 class="big-heading">Why Choose Us</h2>
+    <p class="big-sub">
+     We’ve simplified the process: just say "Hi" on WhatsApp, choose your service, and let us handle the rest.
+    </p>
+    <div class="touch-box">
+      <p>
+        Hi! We're RapidFix — are you a busy professional struggling to find time to repair or replace plumbing and electrical equipment at your home?
+        <a href="about.html" class="more-btn">More</a>
+      </p>
     </div>
-    <div class="step">
-      <img src="images/services.jpg" alt="Select Items" />
-      <h3>02 Select the Items</h3>
-      <p>Select what you need and the quantity – it's that simple!</p>
-    </div>
-    <div class="step">
-      <img src="images/location.jpg" alt="Share Location" />
-      <h3>03 Share the Location</h3>
-      <p>Send us your location via WhatsApp and we’ll dispatch a technician immediately.</p>
-    </div>
-    <div class="step">
-      <img src="images/booking.jpg" alt="Book Slot" />
-      <h3>04 Book Your Slot</h3>
-      <p>Choose a time that works for you. We'll be there on time.</p>
+    <div class="gallery">
+      <div class="img-box"><img src="images/1.jpg" alt="Electrical work"></div>
+      <div class="img-box"><img src="images/2.jpg" alt="Plumbing tools"></div>
+      <div class="img-box"><img src="images/3.jpg" alt="Technician at work"></div>
+      <div class="img-box"><img src="images/4.jpg" alt="Happy customer"></div>
     </div>
   </section>
 
-  <!-- Pop-Up Join Box -->
+  <!-- Transition: Green to White -->
+  <div class="transition green-white"></div>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section bg-white">
+    <h1>What Our Customers Say</h1>
+    <p class="text-sub">
+      Don’t just take our word for it. Read what real customers have to say about RapidFix's quality, speed, and professionalism.
+    </p>
+
+    <div class="testimonial-container">
+      <div class="testimonial-image">
+        <img src="images/services.jpg" alt="Service Image" />
+      </div>
+      <div class="testimonial-content">
+        <h2>What Our Customers say<br>about us...</h2>
+        <div class="testimonial-cards">
+          <div class="card"><h3>Rose</h3><p>Very professional and punctual. Highly recommend!</p></div>
+          <div class="card"><h3>Zulaikha</h3><p>Door work was completed the same day. Super easy to book.</p></div>
+          <div class="card"><h3>Karthik</h3><p>Urgent plumbing handled quickly. Impressed!</p></div>
+          <div class="card"><h3>Priya</h3><p>Clean and efficient work. Technician explained everything.</p></div>
+          <div class="card"><h3>John</h3><p>Quick confirmation via WhatsApp. Great service!</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup -->
   <div class="popup" id="popup">
     <div class="popup-content">
       <span class="popup-close" onclick="closePopup()">&times;</span>

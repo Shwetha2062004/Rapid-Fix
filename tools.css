@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.book-now-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Tool Grid */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px 100px;
+}
+
+.tool {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.tool img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tool-name {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add-btn {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tool-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+  }
+
+  .testimonial-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
