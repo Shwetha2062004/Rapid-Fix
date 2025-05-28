@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Global Reset */
 * {
   margin: 0;
@@ -244,10 +245,91 @@ body {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
+=======
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header {
+  background: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book-btn {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(to bottom, black, #008000);
+}
+
+.highlight {
+  color: #00FFAA;
+  font-weight: bold;
+}
+
+.highlight-box {
+  background: #008000;
+  color: white;
+  font-size: 18px;
+}
+
+.big-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.intro-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  color: black;
+  flex-wrap: wrap;
+>>>>>>> Stashed changes
 }
 
 .text-box {
   flex: 1;
+<<<<<<< Updated upstream
   background: rgba(0, 0, 0, 0.6); /* Transparent black */
   color: white;
   padding: 2rem;
@@ -429,4 +511,81 @@ body {
 .popup-image {
   width: 100px;
   margin: 1rem auto;
+=======
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.text-box button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.text-box button:hover {
+  background: white;
+  color: black;
+}
+
+.image-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(0.97);
+}
+
+.steps {
+  background: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.steps .left, .steps .right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.steps img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.step-box {
+  background: #f0f0f0;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.counters {
+  background: #00b894;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.counter-box {
+  margin: 20px;
+  font-size: 24px;
+>>>>>>> Stashed changes
 }
