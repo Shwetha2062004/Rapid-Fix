@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 // Show popup after 5 seconds
 window.onload = function () {
   setTimeout(function () {
@@ -10,7 +10,7 @@ window.onload = function () {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
-=======
+
 let orders = 0;
 let customers = 0;
 
@@ -32,4 +32,4 @@ window.onload = () => {
   animateCount('orders', 2000, 1000);
   animateCount('customers', 700, 1000);
 };
->>>>>>> Stashed changes
+

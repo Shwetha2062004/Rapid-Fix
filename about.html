@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - RapidFix</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css" />
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">RapidFix</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="tools.html">Tools</a></li>
-      </ul>
-    </nav>
-    <a href="https://wa.me/XXXXXXXXXXX" class="book-now-btn" target="_blank">Book Now</a>
+  <header class="header">
+    <h1>About RapidFix</h1>
   </header>
 
-  <section class="hero">
-    <h1>About RapidFix</h1>
-    <p>We provide emergency plumbing and electrical services with a 30-minute arrival guarantee.</p>
-    <p>Our team of certified, background-checked technicians are on standby 24/7 to bring you peace of mind at home.</p>
+  <section class="about-content">
+    <div class="text-block" data-aos="fade-right">
+      <h2>Hi! We're RapidFix</h2>
+      <p>
+        Welcome to RapidFix – your trusted partner for emergency home repairs. We specialize in delivering fast and efficient solutions for electrical and plumbing issues, with a promise to be at your doorstep within 30 minutes.
+
+Whether it’s a power outage, faulty wiring, leaking pipes, or a burst water heater, our team of certified professionals is always ready to respond—24/7. We understand that emergencies don’t wait, and neither should you.
+      </p>
+      <a href="index.html#book-now" class="btn">Book Now</a>
+    </div>
+    <div class="image-block" data-aos="fade-left">
+      <img src="images/about.png" alt="RapidFix Team" />
+    </div>
   </section>
 
+  <section class="about-icons">
+    <h2 class="section-heading" data-aos="fade-up">What We Offer</h2>
+    <div class="icons-grid">
+      <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/electrical.png" alt="Electrical"/>
+        <p>Electrical Repairs</p>
+      </div>
+      <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/plumbing.png" alt="Plumbing"/>
+        <p>Plumbing Services</p>
+      </div>
+      <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/home.png" alt="Home Maintenance"/>
+        <p>Home Maintenance</p>
+      </div>
+      <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/whatsapp.png" alt="WhatsApp Booking"/>
+        <p>WhatsApp Booking</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
